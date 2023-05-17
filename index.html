@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="All pages" />
+    <title>Все страницы</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.2;
+        -webkit-animation: bugfix infinite 1s;
+      }
+
+      html {
+        font-size: 0.5208335vw;
+      }
+
+      body {
+        font-size: 1.6rem;
+        color: #000;
+        background-color: #fff;
+      }
+
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        outline: none;
+        font: inherit;
+        color: unset;
+      }
+
+      a:hover,
+      a:active {
+        outline: none;
+      }
+
+      @media (max-width: 48em) {
+        html {
+          font-size: 5px;
+          font-size: 1.5625vw;
+          font-size: calc(100 / 375) * 5vw;
+          -webkit-text-size-adjust: none;
+        }
+
+        body {
+          font-size: 3.2rem;
+          -webkit-text-size-adjust: none;
+        }
+      }
+
+      .index {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        width: 100%;
+        min-height: 100vh;
+        padding: 10rem;
+      }
+
+      .index:before {
+        content: '';
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-100%);
+        background: linear-gradient(rgb(20, 20, 20) 20%, var(--color-transparent) 50%, rgb(20, 20, 20) 80%);
+        animation: bg 4.8s linear 1s infinite;
+      }
+
+      @keyframes bg {
+        from {
+          transform: translateY(-200%);
+        }
+
+        to {
+          transform: translateY(200%);
+        }
+      }
+
+      .index:after {
+        content: '';
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(20, 20, 20);
+      }
+
+      .index__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .index__item {
+        position: relative;
+        z-index: 5;
+        display: block;
+        min-width: 66rem;
+        padding: 2rem 5rem;
+        border-radius: 2.4rem;
+        border: 1px solid var(--color-transparent);
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        transition: transform 0.5s ease;
+      }
+
+      @media (min-width: 48.01em) {
+        .index__item:nth-child(odd) {
+          transform: translateX(-8rem);
+        }
+
+        .index__item:nth-child(even) {
+          transform: translateX(8rem);
+        }
+      }
+
+      .index__item:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: -2;
+        width: 105%;
+        height: 120%;
+        transform: translate(-50%, -50%) scale(0.95, 0.83);
+        border-radius: inherit;
+        filter: blur(1rem);
+        background-color: var(--color);
+        transition: transform 0.5s ease, filter 0.5s ease;
+      }
+
+      .index__item:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        background-color: #303030;
+      }
+
+      .index__item:hover:before {
+        transform: translate(-50%, -50%) scale(1);
+        filter: blur(1.5rem);
+      }
+
+      .animation-wrapper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .stagger-visualizer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-origin: left top;
+      }
+
+      .stagger-visualizer .dots-wrapper {
+        transform: translateZ(0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .stagger-visualizer .dot {
+        position: relative;
+        z-index: 1;
+        width: 7.77%;
+        height: 14.9rem;
+        margin: 0.5rem;
+        transition: background-color 1.5s ease;
+        border-radius: 1rem;
+        background: #202020;
+        box-shadow: inset 1.2rem 1.2rem 2rem #171717, inset -1.2rem -1.2rem 2rem #292929;
+        will-change: transform;
+      }
+
+      .stagger-visualizer .dot.active {
+        background-color: var(--color);
+      }
+
+      .stagger-visualizer .dot:hover {
+        background-color: var(--color);
+        transition: background-color 0.1s ease;
+      }
+
+      @media (max-width: 48em) {
+        .stagger-visualizer .dot {
+          width: 18.6%;
+          height: 13.8rem;
+        }
+
+        .index {
+          gap: 3rem;
+          padding: 10rem 4rem;
+        }
+
+        .index__item {
+          min-width: auto;
+          width: 100%;
+          padding: 2.5rem 4rem;
+          border-radius: 100rem;
+        }
+
+        .index__item:before {
+          transform: translate(-50%, -50%) scale(0.97, 0.88);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="index">
+      <div class="index__bg">
+        <div class="animation-wrapper">
+          <div class="stagger-visualizer">
+            <div class="dots-wrapper"></div>
+          </div>
+        </div>
+      </div>
+      <a class="index__item" href="main.html" target="_blank">Главная</a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+      let color = [
+        ['rgba(151, 80, 255, 1)', 'rgba(151, 80, 255, 0.7)'],
+        ['rgba(0, 255, 0, 1)', 'rgba(0, 255, 0, 0.7)'],
+        ['rgba(255, 183, 0, 1)', 'rgba(255, 183, 0, 0.7)'],
+        ['rgba(0, 187, 255, 1)', 'rgba(0, 187, 255, 0.7)'],
+        ['rgba(0, 255, 218, 1)', 'rgba(0, 255, 218, 0.7)'],
+      ][Math.floor(Math.random() * 5)];
+
+      $('body').css('--color', color[0]).css('--color-transparent', color[1]);
+
+      const indexAnime = (function () {
+        let dotsWrapperEl = $('.dots-wrapper');
+        let dotsFragment = $(document.createDocumentFragment());
+        let row = Math.ceil(($(document).height() / $(document).width()) * 12.5);
+        let rowMob = Math.ceil(($(document).height() / $(document).width()) * 5);
+        let grid;
+        if ($(window).width() > 768) {
+          grid = [12, row];
+        } else {
+          grid = [5, rowMob];
+        }
+        let numberOfElements = grid[0] * grid[1];
+        let animation;
+
+        for (let i = 0; i < numberOfElements; i++) {
+          dotsFragment.append('<div class="dot"></div>');
+        }
+
+        dotsWrapperEl.append(dotsFragment);
+
+        let index = anime.random(0, numberOfElements - 1);
+
+        function play() {
+          if (animation) animation.pause();
+
+          index = anime.random(0, numberOfElements - 1);
+
+          animation = anime
+            .timeline({
+              easing: 'easeInOutQuad',
+              complete: play,
+            })
+            .add(
+              {
+                targets: '.stagger-visualizer .dot',
+                keyframes: [
+                  {
+                    translateX: anime.stagger('-2px', {
+                      grid: grid,
+                      from: index,
+                      axis: 'x',
+                    }),
+                    translateY: anime.stagger('-2px', {
+                      grid: grid,
+                      from: index,
+                      axis: 'y',
+                    }),
+                    duration: 100,
+                  },
+                  {
+                    translateX: anime.stagger('2px', {
+                      grid: grid,
+                      from: index,
+                      axis: 'x',
+                    }),
+                    translateY: anime.stagger('2px', {
+                      grid: grid,
+                      from: index,
+                      axis: 'y',
+                    }),
+                    scale: anime.stagger([1, 0.9], { grid: grid, from: index }),
+                    duration: 225,
+                  },
+                  {
+                    translateX: 0,
+                    translateY: 0,
+                    scale: 1,
+                    duration: 1200,
+                  },
+                  {
+                    duration: 1400,
+                  },
+                ],
+                delay: anime.stagger(80, { grid: grid, from: index }),
+              },
+              30
+            );
+        }
+
+        play();
+      })();
+    </script>
+  </body>
+</html>

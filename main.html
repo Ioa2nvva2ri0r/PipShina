@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#1d3552" />
+    <meta name="msapplication-TileColor" content="#1d3552" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Главная</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="header container us-shadow">
+      <a class="header__logo" href="#"><img src="img/logo.svg" alt="Логотип" /></a>
+      <nav class="header__nav" id="menu">
+        <div class="header__nav-box">
+          <img class="header__nav-logo" src="img/logo.svg" alt="Логотип" />
+          <button class="header__nav-close" id="menu-close">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="services.html"
+              >Услуги
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="stock.html"
+              >Акции
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="about.html"
+              >О компании
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="contacts.html"
+              >Контакты
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></a>
+          </li>
+        </ul>
+        <ul class="header__contacts">
+          <li class="header__contacts-item">
+            <h4 class="header__contacts-title">Телефон</h4>
+            <a class="header__contacts-desc" href="http://">8 (910) 543-66-55</a>
+          </li>
+          <li class="header__contacts-item">
+            <h4 class="header__contacts-title">E-mail</h4>
+            <a class="header__contacts-desc" href="http://">example@pipshina.ru</a>
+          </li>
+          <li class="header__contacts-item">
+            <h4 class="header__contacts-title">Адрес</h4>
+            <address class="header__contacts-desc">Деревня Шопино, Кленовый переулок, д. 3</address>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__box-call">
+        <div class="header__box-tel">
+          <a class="header__tel" href="tel:+74951500100">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.0125 13.2254C16.3408 13.0809 15.8094 13.3928 15.3389 13.6651C14.8571 13.9458 13.9409 14.6891 13.4157 14.4988C10.7268 13.3917 8.19783 11.0382 7.10309 8.33857C6.91014 7.80217 7.64995 6.88011 7.92853 6.39257C8.19887 5.92062 8.50428 5.38422 8.36499 4.70749C8.23911 4.09936 6.61092 2.02758 6.03517 1.46103C5.65547 1.0868 5.26648 0.880977 4.86717 0.847712C3.3659 0.783261 1.68922 2.78644 1.39516 3.26566C0.658448 4.28752 0.662575 5.64722 1.40754 7.29592C3.20287 11.7243 9.99317 18.4075 14.4382 20.2703C15.2585 20.6539 16.0086 20.8462 16.6824 20.8462C17.3417 20.8462 17.9288 20.6622 18.4333 20.2973C18.8141 20.078 20.8993 18.3181 20.8446 16.7764C20.8116 16.3835 20.6063 15.9905 20.2369 15.6101C19.6746 15.029 17.6161 13.3522 17.0125 13.2254Z"
+                fill="white"
+              ></path></svg
+            ><span>+7 495 150-01-00</span></a
+          ><strong class="header__mail">testmail@mail.ru</strong>
+          <button class="header__nav-open" id="menu-open">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.9565 10.9572H1.04346C0.467168 10.9572 0 11.4243 0 12.0006C0 12.5769 0.467168 13.0441 1.04346 13.0441H22.9565C23.5328 13.0441 24 12.5769 24 12.0006C24 11.4243 23.5328 10.9572 22.9565 10.9572Z"
+                fill="white"
+              ></path>
+              <path
+                d="M1.04346 5.73939H22.9565C23.5328 5.73939 24 5.27222 24 4.69593C24 4.11963 23.5328 3.65247 22.9565 3.65247H1.04346C0.467168 3.65247 0 4.11963 0 4.69593C0 5.27222 0.467168 5.73939 1.04346 5.73939Z"
+                fill="white"
+              ></path>
+              <path
+                d="M22.9565 18.261H1.04346C0.467168 18.261 0 18.7282 0 19.3045C0 19.8808 0.467168 20.348 1.04346 20.348H22.9565C23.5328 20.348 24 19.8808 24 19.3045C24 18.7282 23.5328 18.261 22.9565 18.261Z"
+                fill="white"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <svg width="32" height="32">
+          <use xlink:href="img/sprite.svg#headphones"></use>
+        </svg>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__slider swiper container">
+          <div class="swiper-wrapper">
+            <div class="hero__slide swiper-slide">
+              <h2 class="hero__slide-title us-title">Ремонт и правка дисков</h2>
+              <div class="hero__slide-content">
+                <strong class="hero__slide-price">
+                  <svg width="40" height="40">
+                    <use xlink:href="img/sprite.svg#tag"></use></svg
+                  ><span>от 500<sup>₽</sup></span></strong
+                >
+                <picture>
+                  <source class="hero__img" srcset="img/hero/1.webp" />
+                  <img class="hero__img" src="img/hero/1.webp" alt="Изображение-1" />
+                </picture>
+                <p class="hero__slide-desc">Мы обладаем огромной технической базой и большим опытом реставрации дисков</p>
+              </div>
+            </div>
+            <div class="hero__slide swiper-slide">
+              <h2 class="hero__slide-title us-title">Ремонт и правка дисков</h2>
+              <div class="hero__slide-content">
+                <strong class="hero__slide-price">
+                  <svg width="40" height="40">
+                    <use xlink:href="img/sprite.svg#tag"></use></svg
+                  ><span>от 500<sup>₽</sup></span></strong
+                >
+                <picture>
+                  <source class="hero__img" srcset="img/hero/2.webp" />
+                  <img class="hero__img" src="img/hero/2.webp" alt="Изображение-2" />
+                </picture>
+                <p class="hero__slide-desc">Мы обладаем огромной технической базой и большим опытом реставрации дисков</p>
+              </div>
+            </div>
+            <div class="hero__slide swiper-slide">
+              <h2 class="hero__slide-title us-title">Ремонт и правка дисков</h2>
+              <div class="hero__slide-content">
+                <strong class="hero__slide-price">
+                  <svg width="40" height="40">
+                    <use xlink:href="img/sprite.svg#tag"></use></svg
+                  ><span>от 500<sup>₽</sup></span></strong
+                >
+                <picture>
+                  <source class="hero__img" srcset="img/hero/3.webp" />
+                  <img class="hero__img" src="img/hero/3.webp" alt="Изображение-3" />
+                </picture>
+                <p class="hero__slide-desc">Мы обладаем огромной технической базой и большим опытом реставрации дисков</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero__slider-pagination"></div>
+        </div>
+        <div class="hero__slider-box">
+          <button class="hero__slider-btn hero__slider-btn-prev">
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </button>
+          <button class="hero__slider-btn hero__slider-btn-next">
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hero__content">
+          <div class="hero__box-link"><a class="hero__link-more" href="#">Подробнее</a><a class="hero__link-service" href="#">Все услуги</a></div>
+          <ul class="hero__content-list swiper">
+            <div class="swiper-wrapper">
+              <li class="hero__content-item swiper-slide">
+                <h3 class="hero__content-title">Клиентов</h3>
+                <strong class="hero__content-desc">1000+</strong>
+              </li>
+              <li class="hero__content-item swiper-slide">
+                <h3 class="hero__content-title">Мы на рынке</h3>
+                <strong class="hero__content-desc">12 лет</strong>
+              </li>
+              <li class="hero__content-item swiper-slide">
+                <h3 class="hero__content-title">Партнеров</h3>
+                <strong class="hero__content-desc">200+</strong>
+              </li>
+              <li class="hero__content-item swiper-slide">
+                <h3 class="hero__content-title">Рейтинг</h3>
+                <strong class="hero__content-desc">5.0</strong>
+              </li>
+            </div>
+          </ul>
+          <button class="hero__link-application popup-open">
+            <strong>Оставить заявку</strong><span></span><span></span><span></span><span></span
+            ><span>
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></span>
+          </button>
+        </div>
+      </section>
+      <section class="main-services container us-shadow">
+        <h2 class="main-services__title us-title">Наши услуги</h2>
+        <ul class="main-services__list">
+          <li class="main-services__item">
+            <div>
+              <div class="main-services__item-icon" style="background-image: url('../img/main-services/1.svg')"></div>
+              <strong class="main-services__item-subtitle">Услуга</strong>
+              <h3 class="main-services__item-title">Сезонная замена шин</h3>
+            </div>
+            <a class="main-services__item-link" href="http://" aria-label="Подробнее">
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></a>
+          </li>
+          <li class="main-services__item">
+            <div>
+              <div class="main-services__item-icon" style="background-image: url('../img/main-services/2.svg')"></div>
+              <strong class="main-services__item-subtitle">Услуга</strong>
+              <h3 class="main-services__item-title">Правка и ремонт дисков</h3>
+            </div>
+            <a class="main-services__item-link" href="http://" aria-label="Подробнее">
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></a>
+          </li>
+          <li class="main-services__item">
+            <div>
+              <div class="main-services__item-icon" style="background-image: url('../img/main-services/3.svg')"></div>
+              <strong class="main-services__item-subtitle">Услуга</strong>
+              <h3 class="main-services__item-title">Сварка аргоном</h3>
+            </div>
+            <a class="main-services__item-link" href="http://" aria-label="Подробнее">
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></a>
+          </li>
+          <li class="main-services__item">
+            <div>
+              <div class="main-services__item-icon" style="background-image: url('../img/main-services/4.svg')"></div>
+              <strong class="main-services__item-subtitle">Услуга</strong>
+              <h3 class="main-services__item-title">Продажа б/у резины из Европы</h3>
+            </div>
+            <a class="main-services__item-link" href="http://" aria-label="Подробнее">
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></a>
+          </li>
+          <li class="main-services__item">
+            <div>
+              <div class="main-services__item-icon" style="background-image: url('../img/main-services/5.svg')"></div>
+              <strong class="main-services__item-subtitle">Экспресс-услуга</strong>
+              <h3 class="main-services__item-title">Замена антифриза с промывкой</h3>
+            </div>
+            <a class="main-services__item-link" href="http://" aria-label="Подробнее">
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></a>
+          </li>
+          <li class="main-services__item">
+            <div>
+              <div class="main-services__item-icon" style="background-image: url('../img/main-services/6.svg')"></div>
+              <strong class="main-services__item-subtitle">Услуга</strong>
+              <h3 class="main-services__item-title">Заправка кондиционера</h3>
+            </div>
+            <a class="main-services__item-link" href="http://" aria-label="Подробнее">
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></a>
+          </li>
+          <li class="main-services__item">
+            <div>
+              <div class="main-services__item-icon" style="background-image: url('../img/main-services/7.svg')"></div>
+              <strong class="main-services__item-subtitle">Услуга</strong>
+              <h3 class="main-services__item-title">Ремонт порезов и проколов резины</h3>
+            </div>
+            <a class="main-services__item-link" href="http://" aria-label="Подробнее">
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></a>
+          </li>
+        </ul>
+      </section>
+      <section class="partners container">
+        <h2 class="partners__title us-title">Наши партнеры</h2>
+        <div class="partners__slider swiper">
+          <div class="swiper-wrapper">
+            <div class="partners__slide swiper-slide">
+              <div class="partners__slide-box">
+                <img class="partners__slide-img--bmw partners__slide-img" src="img/partners/bmw.svg" alt="Партнёр-bmw" />
+              </div>
+              <div class="partners__slide-box">
+                <img class="partners__slide-img--audi partners__slide-img" src="img/partners/audi.svg" alt="Партнёр-audi" />
+              </div>
+            </div>
+            <div class="partners__slide swiper-slide">
+              <div class="partners__slide-box">
+                <img class="partners__slide-img--hyundai partners__slide-img" src="img/partners/hyundai.svg" alt="Партнёр-hyundai" />
+              </div>
+              <div class="partners__slide-box">
+                <img class="partners__slide-img--kia partners__slide-img" src="img/partners/kia.svg" alt="Партнёр-kia" />
+              </div>
+            </div>
+            <div class="partners__slide swiper-slide">
+              <div class="partners__slide-box">
+                <img class="partners__slide-img--mitsubishi partners__slide-img" src="img/partners/mitsubishi.svg" alt="Партнёр-mitsubishi" />
+              </div>
+              <div class="partners__slide-box">
+                <img class="partners__slide-img--subaru partners__slide-img" src="img/partners/subaru.svg" alt="Партнёр-subaru" />
+              </div>
+            </div>
+            <div class="partners__slide swiper-slide">
+              <div class="partners__slide-box">
+                <img class="partners__slide-img--volkswagen partners__slide-img" src="img/partners/volkswagen.svg" alt="Партнёр-volkswagen" />
+              </div>
+              <div class="partners__slide-box">
+                <img class="partners__slide-img--honda partners__slide-img" src="img/partners/honda.svg" alt="Партнёр-honda" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="partners__slider-pagination"></div>
+      </section>
+      <section class="mobile-service container us-shadow">
+        <h2 class="mobile-service__title">Мобильные приложения</h2>
+        <h3 class="mobile-service__subtitle us-title">Наши услуги теперь у вас в кармане</h3>
+        <div class="mobile-service__content">
+          <div class="mobile-service__content-box">
+            <h4 class="mobile-service__content-title us-title"><span>pips</span><span>time</span></h4>
+            <p class="mobile-service__content-desc">
+              Разнообразный и богатый опыт новая модель организационной деятельности в значительной степени обуславливает создание модели развития.
+              Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий играет важную роль в формировании направлений
+              прогрессивного развития.
+            </p>
+            <div class="mobile-service__link-box">
+              <a class="mobile-service__link-googleplay mobile-service__link" href="#"
+                ><img src="img/mobile-service/googleplay.svg" alt="googleplay" /></a
+              ><a class="mobile-service__link-appstore mobile-service__link" href="#"><img src="img/mobile-service/appstore.svg" alt="appstore" /></a>
+            </div>
+          </div>
+          <picture class="mobile-service__img-box">
+            <source class="mobile-service__img" srcset="img/mobile-service/mobile.webp" />
+            <img class="mobile-service__img" src="img/mobile-service/mobile.webp" alt="Изображение" />
+          </picture>
+        </div>
+      </section>
+      <section class="main-about container">
+        <h2 class="main-about__title us-title">О сервисе</h2>
+        <p class="main-about__desc">
+          В последние десять лет в нашей стране наблюдается стремительный рост автопарка отечественного и зарубежного производителя. Это, в свою
+          очередь, является главным условием развития деятельности различных направлений автосервиса. В перечень наиболее популярных и востребованных
+          услуг по ремонту автомобилей относится шиномонтаж.
+        </p>
+      </section>
+      <section class="contacts container us-shadow">
+        <div class="contacts__map" id="map"></div>
+        <div class="contacts__content">
+          <h2 class="contacts__title us-title">Наши контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <span class="contacts__item-icon">
+                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M26.5621 11.0326C25.2223 5.13732 20.0799 2.48315 15.5627 2.48315C15.5627 2.48315 15.5627 2.48315 15.5499 2.48315C11.0455 2.48315 5.89027 5.12456 4.55043 11.0199C3.05746 17.6042 7.08975 23.1805 10.7392 26.6897C12.0918 27.9912 13.8273 28.642 15.5627 28.642C17.2981 28.642 19.0335 27.9912 20.3733 26.6897C24.0228 23.1805 28.0551 17.617 26.5621 11.0326ZM15.5627 17.4256C13.3424 17.4256 11.5431 15.6264 11.5431 13.4061C11.5431 11.1858 13.3424 9.38654 15.5627 9.38654C17.783 9.38654 19.5822 11.1858 19.5822 13.4061C19.5822 15.6264 17.783 17.4256 15.5627 17.4256Z"
+                    fill="url(#paint0_linear_453_21073)"
+                  ></path>
+                  <defs>
+                    <linearGradient id="paint0_linear_453_21073" x1="15.5563" y1="2.48315" x2="15.5563" y2="28.642" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#FF8A1E"></stop>
+                      <stop offset="1" stop-color="#DA5A12"></stop>
+                    </linearGradient>
+                  </defs></svg
+              ></span>
+              <address class="contacts__desc">г. Калуга, ул. Пролетарская, д. 116</address>
+            </li>
+            <li class="contacts__item">
+              <span class="contacts__item-icon">
+                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M21.9424 4.71606H9.18197C5.35384 4.71606 2.80176 6.63013 2.80176 11.0963V20.0286C2.80176 24.4947 5.35384 26.4088 9.18197 26.4088H21.9424C25.7705 26.4088 28.3226 24.4947 28.3226 20.0286V11.0963C28.3226 6.63013 25.7705 4.71606 21.9424 4.71606ZM22.5421 12.4872L18.5481 15.6773C17.7059 16.3536 16.634 16.6853 15.5622 16.6853C14.4903 16.6853 13.4057 16.3536 12.5762 15.6773L8.58223 12.4872C8.17389 12.1554 8.11009 11.5429 8.4291 11.1346C8.76087 10.7262 9.36061 10.6497 9.76895 10.9814L13.763 14.1715C14.7327 14.9499 16.3788 14.9499 17.3486 14.1715L21.3426 10.9814C21.751 10.6497 22.3635 10.7135 22.6825 11.1346C23.0143 11.5429 22.9505 12.1554 22.5421 12.4872Z"
+                    fill="url(#paint0_linear_453_21078)"
+                  ></path>
+                  <defs>
+                    <linearGradient id="paint0_linear_453_21078" x1="15.5622" y1="4.71606" x2="15.5622" y2="26.4088" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#FF8A1E"></stop>
+                      <stop offset="1" stop-color="#DA5A12"></stop>
+                    </linearGradient>
+                  </defs></svg></span
+              ><a class="contacts__desc" href="mailto:example@mail.com">example@mail.com</a>
+            </li>
+            <li class="contacts__item">
+              <span class="contacts__item-icon">
+                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M28.2843 23.6398C28.2843 24.0991 28.1822 24.5713 27.9653 25.0306C27.7484 25.49 27.4676 25.9239 27.0976 26.3322C26.4723 27.0213 25.7833 27.5189 25.0049 27.8379C24.2393 28.1569 23.4098 28.3228 22.5166 28.3228C21.215 28.3228 19.8242 28.0166 18.3567 27.3913C16.8893 26.7661 15.4218 25.9239 13.9671 24.8648C12.4997 23.7929 11.1088 22.6062 9.78171 21.2918C8.46738 19.9648 7.28066 18.5739 6.22155 17.1192C5.17519 15.6645 4.33301 14.2098 3.72051 12.7679C3.10801 11.3132 2.80176 9.92231 2.80176 8.59523C2.80176 7.72752 2.95488 6.8981 3.26113 6.13247C3.56738 5.35409 4.05228 4.6395 4.72858 4.00148C5.54525 3.19757 6.43848 2.802 7.38275 2.802C7.74004 2.802 8.09733 2.87856 8.41634 3.03169C8.74811 3.18481 9.0416 3.4145 9.27129 3.74627L12.2317 7.91893C12.4614 8.23794 12.6273 8.53143 12.7421 8.81216C12.857 9.08013 12.9208 9.3481 12.9208 9.59054C12.9208 9.89679 12.8314 10.203 12.6528 10.4965C12.4869 10.79 12.2445 11.0963 11.9382 11.4025L10.9684 12.4106C10.8281 12.551 10.7643 12.7168 10.7643 12.921C10.7643 13.0231 10.777 13.1124 10.8025 13.2145C10.8408 13.3166 10.8791 13.3931 10.9046 13.4697C11.1343 13.8908 11.5299 14.4395 12.0913 15.103C12.6656 15.7666 13.2781 16.4429 13.9416 17.1192C14.6307 17.7955 15.2942 18.4208 15.9705 18.995C16.634 19.5564 17.1827 19.9392 17.6166 20.1689C17.6804 20.1944 17.757 20.2327 17.8463 20.271C17.9484 20.3093 18.0505 20.3221 18.1653 20.3221C18.3822 20.3221 18.5481 20.2455 18.6885 20.1051L19.6583 19.1481C19.9773 18.8291 20.2835 18.5866 20.577 18.4335C20.8705 18.2549 21.164 18.1655 21.483 18.1655C21.7255 18.1655 21.9807 18.2166 22.2614 18.3314C22.5421 18.4463 22.8356 18.6122 23.1546 18.8291L27.3783 21.8278C27.7101 22.0575 27.9398 22.3254 28.0801 22.6444C28.2077 22.9635 28.2843 23.2825 28.2843 23.6398Z"
+                    fill="url(#paint0_linear_453_21083)"
+                  ></path>
+                  <defs>
+                    <linearGradient id="paint0_linear_453_21083" x1="15.543" y1="2.802" x2="15.543" y2="28.3228" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#FF8A1E"></stop>
+                      <stop offset="1" stop-color="#DA5A12"></stop>
+                    </linearGradient>
+                  </defs></svg
+              ></span>
+              <div class="contacts__desc"><a href="tel:+89999999999">8 (999) 999-99-99</a><a href="tel:+89999999999">8 (999) 999-99-99</a></div>
+            </li>
+            <li class="contacts__item">
+              <span class="contacts__item-icon">
+                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.5622 2.802C8.53118 2.802 2.80176 8.53143 2.80176 15.5624C2.80176 22.5934 8.53118 28.3228 15.5622 28.3228C22.5932 28.3228 28.3226 22.5934 28.3226 15.5624C28.3226 8.53143 22.5932 2.802 15.5622 2.802ZM21.113 20.1179C20.9343 20.4241 20.6153 20.59 20.2835 20.59C20.1176 20.59 19.9518 20.5517 19.7986 20.4497L15.8429 18.089C14.8604 17.502 14.133 16.2132 14.133 15.0775V9.84575C14.133 9.32257 14.5669 8.88872 15.09 8.88872C15.6132 8.88872 16.0471 9.32257 16.0471 9.84575V15.0775C16.0471 15.5369 16.4299 16.2132 16.8255 16.4429L20.7812 18.8036C21.2406 19.0715 21.3937 19.6585 21.113 20.1179Z"
+                    fill="url(#paint0_linear_453_21088)"
+                  ></path>
+                  <defs>
+                    <linearGradient id="paint0_linear_453_21088" x1="15.5622" y1="2.802" x2="15.5622" y2="28.3228" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#FF8A1E"></stop>
+                      <stop offset="1" stop-color="#DA5A12"></stop>
+                    </linearGradient>
+                  </defs></svg
+              ></span>
+              <p class="contacts__desc">с 9:00 до 20:00 (без выходных)</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main-desc container us-shadow">
+        <svg>
+          <use xlink:href="img/sprite.svg#tread"></use>
+        </svg>
+        <div class="main-desc__content">
+          <h2 class="main-desc__title us-title">Длинный или короткий заголовок для сео текста</h2>
+          <div class="main-desc__desc-box">
+            <p class="main-desc__desc">
+              Задача организации, в особенности же рамки и место обучения кадров требуют от нас анализа модели развития. Равным образом рамки и место
+              обучения кадров представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Не
+              следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и
+              реализации направлений прогрессивного развития.
+            </p>
+            <p class="main-desc__desc">
+              Повседневная практика показывает, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и
+              модернизации позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт консультация с широким активом
+              представляет собой интересный эксперимент проверки систем массового участия.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="record container us-shadow">
+        <form class="record__form">
+          <h2 class="record__title us-title">Запишитесь к мастеру</h2>
+          <label class="record__label" for="name"
+            ><span>Ваше имя</span>
+            <input class="record__input" type="text" id="name" name="name" placeholder="Введите имя" />
+          </label>
+          <label class="record__label" for="tel"
+            ><span>Телефон</span>
+            <input class="record__input" type="tel" id="tel" name="tel" placeholder="Введите телефон" />
+          </label>
+          <button class="record__btn">Записаться</button>
+        </form>
+        <picture class="record__img-box">
+          <source class="record__img" srcset="img/record/1.webp" />
+          <img class="record__img" src="img/record/1.webp" alt="Тесла" />
+        </picture>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__box-top">
+        <div class="container">
+          <a class="footer__logo" href="#"><img src="img/logo.svg" alt="Логотип" /></a>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item"><a class="footer__nav-link" href="services.html">Услуги</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="stock.html">Акции</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="about.html">О компании</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="footer__box-call">
+            <div class="footer__box-tel">
+              <a class="footer__tel" href="tel:+74951500100"><span>+7 495 150-01-00</span></a
+              ><strong class="footer__mail">testmail@mail.ru</strong>
+            </div>
+            <svg width="32" height="32">
+              <use xlink:href="img/sprite.svg#headphones"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="footer__box-bottom">
+        <div class="container">
+          <strong class="footer__copyright">©2023 PIPSHINA.RU</strong><a class="footer__link" href="#">Политика конфиденциальности</a
+          ><strong class="footer__developed-desc"> Разработано Request&nbsp;<span>Design</span></strong>
+        </div>
+      </div>
+    </footer>
+    <div class="popup" id="popup">
+      <div class="popup__content" id="popup-content">
+        <div class="popup__icon">
+          <svg width="150" height="210" viewBox="0 0 150 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_ddddd_453_4504)">
+              <path
+                d="M104.355 22.6113H98.4844C96.862 22.6113 95.5489 23.9242 95.5489 25.5468C95.5489 27.1693 96.8618 28.4824 98.4844 28.4824H104.355C105.978 28.4824 107.291 27.1695 107.291 25.5468C107.291 23.9242 105.978 22.6113 104.355 22.6113ZM74.6913 12.492L71.756 6.6211C71.0251 5.17051 69.2677 4.58868 67.8171 5.30821C66.3665 6.0334 65.7788 7.79648 66.5042 9.24707L69.4398 15.118C70.164 16.5627 71.9183 17.1562 73.3786 16.4308C74.8288 15.7056 75.4165 13.9426 74.6913 12.492ZM93.9264 5.30821C92.4815 4.58868 90.713 5.17071 89.9876 6.6211L87.052 12.492C86.3268 13.9426 86.9145 15.7055 88.3649 16.4308C89.0614 16.7785 89.8675 16.8355 90.606 16.5894C91.3445 16.3432 91.9552 15.814 92.3038 15.118L95.2393 9.24707C95.9645 7.79648 95.3768 6.0334 93.9264 5.30821ZM63.2589 22.6113H57.388C55.7656 22.6113 54.4525 23.9242 54.4525 25.5468C54.4525 27.1693 55.7654 28.4824 57.388 28.4824H63.2589C64.8814 28.4824 66.1945 27.1695 66.1945 25.5468C66.1945 23.9242 64.8814 22.6113 63.2589 22.6113ZM45.6463 52.1616H33.9043C32.2832 52.1616 30.9688 53.4759 30.9688 55.0972V102.064C30.9688 103.685 32.283 105 33.9043 105H45.6461C47.2672 105 48.5816 103.686 48.5816 102.064V55.097C48.5816 53.4759 47.2675 52.1616 45.6463 52.1616ZM118.974 59.9429C118.456 55.3892 114.203 52.1616 109.62 52.1616H86.7341C88.679 48.679 89.7229 38.8288 89.6766 34.805C89.5999 28.1445 84.0841 22.807 77.4233 22.807H75.0011C73.3786 22.807 72.0655 24.1199 72.0655 25.7425C72.0655 32.5306 69.4224 44.7829 64.4374 49.7681C61.0822 53.1233 58.2138 54.3392 54.4527 56.2188V100.265C60.2111 102.185 67.5224 105 78.6663 105H97.8686C104.196 105 109.123 99.14 106.672 92.9487C110.407 91.9311 113.162 88.5053 113.162 84.4518C113.162 83.3079 112.941 82.2129 112.543 81.2067C118.837 79.4916 121.154 71.7192 116.785 66.8389C118.39 65.0458 119.276 62.5931 118.974 59.9429Z"
+                fill="url(#paint0_linear_453_4504)"
+              ></path>
+              <path
+                d="M104.356 22.6113H98.4851C96.8626 22.6113 95.5495 23.9242 95.5495 25.5468C95.5495 27.1693 96.8624 28.4824 98.4851 28.4824H104.356C105.978 28.4824 107.292 27.1695 107.292 25.5468C107.291 23.9242 105.978 22.6113 104.356 22.6113ZM74.692 12.492L71.7566 6.6211C71.0257 5.17051 69.2683 4.58868 67.8177 5.30821C66.3672 6.0334 65.7795 7.79648 66.5049 9.24707L69.4404 15.118C70.1646 16.5627 71.9189 17.1562 73.3793 16.4308C74.8295 15.7056 75.4171 13.9426 74.692 12.492ZM93.9271 5.30821C92.4822 4.58868 90.7136 5.17071 89.9882 6.6211L87.0527 12.492C86.3275 13.9426 86.9152 15.7055 88.3656 16.4308C89.0621 16.7785 89.8681 16.8355 90.6066 16.5894C91.3451 16.3432 91.9558 15.814 92.3044 15.118L95.24 9.24707C95.9652 7.79648 95.3775 6.0334 93.9271 5.30821ZM63.2596 22.6113H57.3887C55.7662 22.6113 54.4531 23.9242 54.4531 25.5468C54.4531 27.1693 55.766 28.4824 57.3887 28.4824H63.2596C64.882 28.4824 66.1951 27.1695 66.1951 25.5468C66.1951 23.9242 64.882 22.6113 63.2596 22.6113Z"
+                fill="url(#paint1_linear_453_4504)"
+              ></path>
+            </g>
+            <defs>
+              <filter
+                id="filter0_ddddd_453_4504"
+                x="-5"
+                y="0"
+                width="160"
+                height="210"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                <feOffset></feOffset>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.0784314 0 0 0 0 0.0941176 0 0 0 0 0.105882 0 0 0 0.1 0"></feColorMatrix>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_453_4504"></feBlend>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                <feOffset dy="5"></feOffset>
+                <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.0784314 0 0 0 0 0.0941176 0 0 0 0 0.105882 0 0 0 0.1 0"></feColorMatrix>
+                <feBlend mode="normal" in2="effect1_dropShadow_453_4504" result="effect2_dropShadow_453_4504"></feBlend>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                <feOffset dy="19"></feOffset>
+                <feGaussianBlur stdDeviation="9.5"></feGaussianBlur>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.0784314 0 0 0 0 0.0941176 0 0 0 0 0.105882 0 0 0 0.08 0"></feColorMatrix>
+                <feBlend mode="normal" in2="effect2_dropShadow_453_4504" result="effect3_dropShadow_453_4504"></feBlend>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                <feOffset dy="42"></feOffset>
+                <feGaussianBlur stdDeviation="12.5"></feGaussianBlur>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.0784314 0 0 0 0 0.0941176 0 0 0 0 0.105882 0 0 0 0.05 0"></feColorMatrix>
+                <feBlend mode="normal" in2="effect3_dropShadow_453_4504" result="effect4_dropShadow_453_4504"></feBlend>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                <feOffset dy="75"></feOffset>
+                <feGaussianBlur stdDeviation="15"></feGaussianBlur>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.0784314 0 0 0 0 0.0941176 0 0 0 0 0.105882 0 0 0 0.01 0"></feColorMatrix>
+                <feBlend mode="normal" in2="effect4_dropShadow_453_4504" result="effect5_dropShadow_453_4504"></feBlend>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect5_dropShadow_453_4504" result="shape"></feBlend>
+              </filter>
+              <linearGradient id="paint0_linear_453_4504" x1="75.0007" y1="5" x2="75.0007" y2="105" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#77E6FD"></stop>
+                <stop offset="1" stop-color="#26A4D9"></stop>
+              </linearGradient>
+              <linearGradient id="paint1_linear_453_4504" x1="80.8723" y1="5" x2="80.8723" y2="28.4824" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#FF8A1E"></stop>
+                <stop offset="1" stop-color="#DA5A12"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <h2 class="popup__title us-title">Заявка отправлена!</h2>
+        <p class="popup__desc">Наш оператор свяжется с Вами в ближайшее время.</p>
+        <a class="popup__link" href="main.html">На главную</a>
+        <button class="popup__close" aria-label="Закрыть" id="popup-close">
+          <svg>
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&amp;lang=ru_RU" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
