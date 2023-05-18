@@ -2761,8 +2761,42 @@ input[type='search']::-webkit-search-results-decoration {
 }
 
 .policy {
+  position: relative;
   padding-top: 7rem;
   padding-bottom: 24rem;
+}
+.policy__shadow span.us-shadow:nth-child(odd)::after {
+  right: -70rem;
+}
+.policy__shadow span.us-shadow:nth-child(even)::after {
+  left: -70rem;
+}
+.policy__shadow span.us-shadow:first-child::after {
+  top: 60rem;
+  right: -40rem;
+  width: 17.8rem;
+  height: 17.8rem;
+  background: rgba(107, 172, 219, 0.7);
+  -webkit-filter: blur(15rem);
+  filter: blur(15rem);
+}
+.policy__shadow span.us-shadow:nth-child(2)::after {
+  top: 85rem;
+}
+.policy__shadow span.us-shadow:nth-child(3)::after {
+  top: 190rem;
+}
+.policy__shadow span.us-shadow:nth-child(4)::after {
+  bottom: 35rem;
+}
+.policy__shadow span.us-shadow:nth-child(5)::after {
+  bottom: 135rem;
+}
+.policy__shadow span.us-shadow:nth-child(6)::after {
+  bottom: 210rem;
+}
+.policy__shadow span.us-shadow:nth-last-child(-n + 4)::after {
+  display: none;
 }
 .policy__title-box {
   display: -webkit-box;
@@ -2827,6 +2861,56 @@ input[type='search']::-webkit-search-results-decoration {
 @media (max-width: 48em) {
   .policy {
     padding-bottom: 40rem;
+  }
+  .policy__shadow span.us-shadow:nth-child(odd)::after {
+    right: initial;
+    left: -110rem;
+  }
+  .policy__shadow span.us-shadow:nth-child(even)::after {
+    left: initial;
+    right: -110rem;
+  }
+  .policy__shadow span.us-shadow:first-child::after {
+    top: 43rem;
+    right: -30rem;
+    width: 26.4rem;
+    height: 26.4rem;
+    -webkit-filter: blur(25rem);
+    filter: blur(25rem);
+  }
+  .policy__shadow span.us-shadow:nth-child(2)::after {
+    top: 85rem;
+    left: initial;
+    right: -20rem;
+    width: 81rem;
+    height: 81rem;
+  }
+  .policy__shadow span.us-shadow:nth-child(3)::after {
+    top: 250rem;
+  }
+  .policy__shadow span.us-shadow:nth-child(4)::after {
+    bottom: 1665rem;
+  }
+  .policy__shadow span.us-shadow:nth-child(5)::after {
+    bottom: 1440rem;
+  }
+  .policy__shadow span.us-shadow:nth-child(6)::after {
+    bottom: 1220rem;
+  }
+  .policy__shadow span.us-shadow:nth-last-child(4)::after {
+    bottom: 1000rem;
+  }
+  .policy__shadow span.us-shadow:nth-last-child(3)::after {
+    bottom: 690rem;
+  }
+  .policy__shadow span.us-shadow:nth-last-child(2)::after {
+    bottom: 385rem;
+  }
+  .policy__shadow span.us-shadow:nth-last-child(1)::after {
+    bottom: 75rem;
+  }
+  .policy__shadow span.us-shadow:nth-last-child(-n + 4)::after {
+    display: block;
   }
   .policy__title-box {
     padding-bottom: 5rem;
