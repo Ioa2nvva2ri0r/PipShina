@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#1d3552" />
+    <meta name="msapplication-TileColor" content="#1d3552" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>О компании</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="header container us-shadow">
+      <a class="header__logo" href="#"><img src="img/logo.svg" alt="Логотип" /></a>
+      <nav class="header__nav" id="menu">
+        <div class="header__nav-box">
+          <img class="header__nav-logo" src="img/logo.svg" alt="Логотип" />
+          <button class="header__nav-close" id="menu-close">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="services.html"
+              >Услуги
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="stock.html"
+              >Акции
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="about.html"
+              >О компании
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="contacts.html"
+              >Контакты
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></a>
+          </li>
+        </ul>
+        <ul class="header__contacts">
+          <li class="header__contacts-item">
+            <h4 class="header__contacts-title">Телефон</h4>
+            <a class="header__contacts-desc" href="http://">8 (910) 543-66-55</a>
+          </li>
+          <li class="header__contacts-item">
+            <h4 class="header__contacts-title">E-mail</h4>
+            <a class="header__contacts-desc" href="http://">example@pipshina.ru</a>
+          </li>
+          <li class="header__contacts-item">
+            <h4 class="header__contacts-title">Адрес</h4>
+            <address class="header__contacts-desc">Деревня Шопино, Кленовый переулок, д. 3</address>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__box-call">
+        <div class="header__box-tel">
+          <a class="header__tel" href="tel:+74951500100">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.0125 13.2254C16.3408 13.0809 15.8094 13.3928 15.3389 13.6651C14.8571 13.9458 13.9409 14.6891 13.4157 14.4988C10.7268 13.3917 8.19783 11.0382 7.10309 8.33857C6.91014 7.80217 7.64995 6.88011 7.92853 6.39257C8.19887 5.92062 8.50428 5.38422 8.36499 4.70749C8.23911 4.09936 6.61092 2.02758 6.03517 1.46103C5.65547 1.0868 5.26648 0.880977 4.86717 0.847712C3.3659 0.783261 1.68922 2.78644 1.39516 3.26566C0.658448 4.28752 0.662575 5.64722 1.40754 7.29592C3.20287 11.7243 9.99317 18.4075 14.4382 20.2703C15.2585 20.6539 16.0086 20.8462 16.6824 20.8462C17.3417 20.8462 17.9288 20.6622 18.4333 20.2973C18.8141 20.078 20.8993 18.3181 20.8446 16.7764C20.8116 16.3835 20.6063 15.9905 20.2369 15.6101C19.6746 15.029 17.6161 13.3522 17.0125 13.2254Z"
+                fill="white"
+              ></path></svg
+            ><span>+7 495 150-01-00</span></a
+          ><strong class="header__mail">testmail@mail.ru</strong>
+          <button class="header__nav-open" id="menu-open">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.9565 10.9572H1.04346C0.467168 10.9572 0 11.4243 0 12.0006C0 12.5769 0.467168 13.0441 1.04346 13.0441H22.9565C23.5328 13.0441 24 12.5769 24 12.0006C24 11.4243 23.5328 10.9572 22.9565 10.9572Z"
+                fill="white"
+              ></path>
+              <path
+                d="M1.04346 5.73939H22.9565C23.5328 5.73939 24 5.27222 24 4.69593C24 4.11963 23.5328 3.65247 22.9565 3.65247H1.04346C0.467168 3.65247 0 4.11963 0 4.69593C0 5.27222 0.467168 5.73939 1.04346 5.73939Z"
+                fill="white"
+              ></path>
+              <path
+                d="M22.9565 18.261H1.04346C0.467168 18.261 0 18.7282 0 19.3045C0 19.8808 0.467168 20.348 1.04346 20.348H22.9565C23.5328 20.348 24 19.8808 24 19.3045C24 18.7282 23.5328 18.261 22.9565 18.261Z"
+                fill="white"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <svg width="32" height="32">
+          <use xlink:href="img/sprite.svg#headphones"></use>
+        </svg>
+      </div>
+    </header>
+    <ul class="breadcrumbs container">
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+      <li class="breadcrumbs__item"><a class="active breadcrumbs__link" href="about.html">О компании</a></li>
+    </ul>
+    <main>
+      <section class="about container us-shadow">
+        <div class="about__title-box">
+          <h2 class="about__title us-title">О компании Pipshina</h2>
+          <strong class="about__subtitle">гарантия качества</strong>
+        </div>
+        <div class="about__content">
+          <div class="about__desc-box">
+            <p class="about__desc">
+              Разнообразный и богатый опыт консультация с широким активом позволяет выполнять важные задания по разработке направлений прогрессивного
+              развития. Задача организации, в особенности же сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в
+              формировании позиций, занимаемых участниками в отношении поставленных задач. Таким образом новая модель организационной деятельности
+              требуют определения и уточнения существенных финансовых и административных условий.
+            </p>
+            <p class="about__desc">
+              Разнообразный и богатый опыт консультация с широким активом в значительной степени обуславливает создание направлений прогрессивного
+              развития. Не следует, однако забывать, что консультация с широким активом требуют определения и уточнения направлений прогрессивного
+              развития. С другой стороны укрепление и развитие структуры позволяет оценить значение позиций, занимаемых участниками в отношении
+              поставленных задач.
+            </p>
+          </div>
+          <div class="about__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="about__slide swiper-slide">
+                <picture>
+                  <source class="about__img" srcset="img/about/1.webp" />
+                  <img class="about__img" src="img/about/1.webp" alt="Изображение-1" />
+                </picture>
+              </div>
+              <div class="about__slide swiper-slide">
+                <picture>
+                  <source class="about__img" srcset="img/about/1.webp" />
+                  <img class="about__img" src="img/about/1.webp" alt="Изображение-2" />
+                </picture>
+              </div>
+              <div class="about__slide swiper-slide">
+                <picture>
+                  <source class="about__img" srcset="img/about/1.webp" />
+                  <img class="about__img" src="img/about/1.webp" alt="Изображение-3" />
+                </picture>
+              </div>
+            </div>
+            <button class="about__slider-btn about__slider-btn-prev">
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+              </svg>
+            </button>
+            <button class="about__slider-btn about__slider-btn-next">
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+              </svg>
+            </button>
+            <div class="about__slider-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages container us-shadow">
+        <h2 class="advantages__title us-title">преимущества компании</h2>
+        <ul class="advantages__list swiper">
+          <div class="swiper-wrapper">
+            <li class="advantages__item swiper-slide">
+              <div class="advantages__item-icon" style="background-image: url('img/advantages/1.svg')"></div>
+              <strong class="advantages__item-subtitle">1000+</strong>
+              <h3 class="advantages__item-title">Постоянных клиентов</h3>
+            </li>
+            <li class="advantages__item swiper-slide">
+              <div class="advantages__item-icon" style="background-image: url('img/advantages/2.svg')"></div>
+              <strong class="advantages__item-subtitle">12 лет</strong>
+              <h3 class="advantages__item-title">На рынке РФ</h3>
+            </li>
+            <li class="advantages__item swiper-slide">
+              <div class="advantages__item-icon" style="background-image: url('img/advantages/3.svg')"></div>
+              <strong class="advantages__item-subtitle">200+</strong>
+              <h3 class="advantages__item-title">Партнеров по бизнесу</h3>
+            </li>
+            <li class="advantages__item swiper-slide">
+              <div class="advantages__item-icon" style="background-image: url('img/advantages/4.svg')"></div>
+              <strong class="advantages__item-subtitle">5.0</strong>
+              <h3 class="advantages__item-title">Оценка в яндексе</h3>
+            </li>
+          </div>
+        </ul>
+        <div class="advantages__slider-pagination"></div>
+      </section>
+      <section class="mobileService-about mobile-service us-shadow">
+        <div class="mobile-service__container container">
+          <h2 class="mobile-service__title">Мобильные приложения</h2>
+          <h3 class="mobile-service__subtitle us-title">Наши услуги теперь у вас в кармане</h3>
+          <div class="mobile-service__content">
+            <div class="mobile-service__content-box">
+              <h4 class="mobile-service__content-title us-title"><span>pips</span><span>time</span></h4>
+              <p class="mobile-service__content-desc">
+                Разнообразный и богатый опыт новая модель организационной деятельности в значительной степени обуславливает создание модели развития.
+                Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий играет важную роль в формировании направлений
+                прогрессивного развития.
+              </p>
+              <div class="mobile-service__link-box">
+                <a class="mobile-service__link-googleplay mobile-service__link" href="#"
+                  ><img src="img/mobile-service/googleplay.svg" alt="googleplay" /></a
+                ><a class="mobile-service__link-appstore mobile-service__link" href="#"
+                  ><img src="img/mobile-service/appstore.svg" alt="appstore"
+                /></a>
+              </div>
+            </div>
+            <picture class="mobile-service__img-box">
+              <source class="mobile-service__img" srcset="img/mobile-service/mobile.webp" />
+              <img class="mobile-service__img" src="img/mobile-service/mobile.webp" alt="Изображение" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="partners container">
+        <h2 class="partners__title us-title">Наши партнеры</h2>
+        <div class="partners__slider swiper">
+          <div class="swiper-wrapper">
+            <div class="partners__slide swiper-slide">
+              <div class="partners__slide-box">
+                <img class="partners__slide-img--bmw partners__slide-img" src="img/partners/bmw.svg" alt="Партнёр-bmw" />
+              </div>
+              <div class="partners__slide-box">
+                <img class="partners__slide-img--audi partners__slide-img" src="img/partners/audi.svg" alt="Партнёр-audi" />
+              </div>
+            </div>
+            <div class="partners__slide swiper-slide">
+              <div class="partners__slide-box">
+                <img class="partners__slide-img--hyundai partners__slide-img" src="img/partners/hyundai.svg" alt="Партнёр-hyundai" />
+              </div>
+              <div class="partners__slide-box">
+                <img class="partners__slide-img--kia partners__slide-img" src="img/partners/kia.svg" alt="Партнёр-kia" />
+              </div>
+            </div>
+            <div class="partners__slide swiper-slide">
+              <div class="partners__slide-box">
+                <img class="partners__slide-img--mitsubishi partners__slide-img" src="img/partners/mitsubishi.svg" alt="Партнёр-mitsubishi" />
+              </div>
+              <div class="partners__slide-box">
+                <img class="partners__slide-img--subaru partners__slide-img" src="img/partners/subaru.svg" alt="Партнёр-subaru" />
+              </div>
+            </div>
+            <div class="partners__slide swiper-slide">
+              <div class="partners__slide-box">
+                <img class="partners__slide-img--volkswagen partners__slide-img" src="img/partners/volkswagen.svg" alt="Партнёр-volkswagen" />
+              </div>
+              <div class="partners__slide-box">
+                <img class="partners__slide-img--honda partners__slide-img" src="img/partners/honda.svg" alt="Партнёр-honda" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="partners__slider-pagination"></div>
+      </section>
+      <section class="record-about record container us-shadow">
+        <form class="record__form">
+          <h2 class="record__title us-title">Запишитесь к мастеру</h2>
+          <label class="record__label" for="name"
+            ><span>Ваше имя</span>
+            <input class="record__input" type="text" id="name" name="name" placeholder="Введите имя" />
+          </label>
+          <label class="record__label" for="tel"
+            ><span>Телефон</span>
+            <input class="record__input" type="tel" id="tel" name="tel" placeholder="Введите телефон" />
+          </label>
+          <button class="record__btn">Записаться</button>
+        </form>
+        <picture class="record__img-box">
+          <source class="record__img" srcset="img/record/1.webp" />
+          <img class="record__img" src="img/record/1.webp" alt="Тесла" />
+        </picture>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__box-top">
+        <div class="container">
+          <a class="footer__logo" href="#"><img src="img/logo.svg" alt="Логотип" /></a>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item"><a class="footer__nav-link" href="services.html">Услуги</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="stock.html">Акции</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="about.html">О компании</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="footer__box-call">
+            <div class="footer__box-tel">
+              <a class="footer__tel" href="tel:+74951500100"><span>+7 495 150-01-00</span></a
+              ><strong class="footer__mail">testmail@mail.ru</strong>
+            </div>
+            <svg width="32" height="32">
+              <use xlink:href="img/sprite.svg#headphones"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="footer__box-bottom">
+        <div class="container">
+          <strong class="footer__copyright">©2023 PIPSHINA.RU</strong><a class="footer__link" href="policy.html">Политика конфиденциальности</a
+          ><strong class="footer__developed-desc"> Разработано Request&nbsp;<span>Design</span></strong>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/about.js"></script>
+  </body>
+</html>
