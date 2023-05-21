@@ -18,8 +18,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Главная</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Услуги - Сезонная замена шин</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
@@ -111,259 +111,200 @@
         </svg>
       </div>
     </header>
+    <ul class="breadcrumbs container">
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="service.html">Услуги</a></li>
+      <li class="breadcrumbs__item"><a class="active breadcrumbs__link" href="service.html">Сезонная замена шин</a></li>
+    </ul>
     <main>
-      <section class="hero">
-        <div class="hero__slider swiper container">
-          <div class="swiper-wrapper">
-            <div class="hero__slide swiper-slide">
-              <h2 class="hero__slide-title us-title">Ремонт и правка дисков</h2>
-              <div class="hero__slide-content">
-                <strong class="hero__slide-price">
-                  <svg width="40" height="40">
-                    <use xlink:href="img/sprite.svg#tag"></use></svg
-                  ><span>от 500<sup>₽</sup></span></strong
-                >
-                <picture>
-                  <source class="hero__img" srcset="img/hero/1.webp" />
-                  <img class="hero__img" src="img/hero/1.webp" alt="Изображение-1" />
-                </picture>
-                <p class="hero__slide-desc">Мы обладаем огромной технической базой и большим опытом реставрации дисков</p>
-              </div>
-            </div>
-            <div class="hero__slide swiper-slide">
-              <h2 class="hero__slide-title us-title">Ремонт и правка дисков</h2>
-              <div class="hero__slide-content">
-                <strong class="hero__slide-price">
-                  <svg width="40" height="40">
-                    <use xlink:href="img/sprite.svg#tag"></use></svg
-                  ><span>от 500<sup>₽</sup></span></strong
-                >
-                <picture>
-                  <source class="hero__img" srcset="img/hero/1.webp" />
-                  <img class="hero__img" src="img/hero/1.webp" alt="Изображение-2" />
-                </picture>
-                <p class="hero__slide-desc">Мы обладаем огромной технической базой и большим опытом реставрации дисков</p>
-              </div>
-            </div>
-            <div class="hero__slide swiper-slide">
-              <h2 class="hero__slide-title us-title">Ремонт и правка дисков</h2>
-              <div class="hero__slide-content">
-                <strong class="hero__slide-price">
-                  <svg width="40" height="40">
-                    <use xlink:href="img/sprite.svg#tag"></use></svg
-                  ><span>от 500<sup>₽</sup></span></strong
-                >
-                <picture>
-                  <source class="hero__img" srcset="img/hero/1.webp" />
-                  <img class="hero__img" src="img/hero/1.webp" alt="Изображение-3" />
-                </picture>
-                <p class="hero__slide-desc">Мы обладаем огромной технической базой и большим опытом реставрации дисков</p>
-              </div>
+      <section class="services">
+        <div class="services__img"><img src="img/services/2.webp" alt="Изображение" /><img src="img/services/mobile/2.webp" alt="Изображение" /></div>
+        <div class="services__container container">
+          <div class="services__content">
+            <h2 class="services__title us-title">Сезонная замена шин</h2>
+            <ul class="services__list">
+              <li class="services__item">
+                <p class="services__desc">Прозрачное ценообразование</p>
+              </li>
+              <li class="services__item">
+                <p class="services__desc">Согласовываем с клиентом каждый этап работ</p>
+              </li>
+              <li class="services__item">
+                <p class="services__desc">Компетентные и вежливые сотрудники</p>
+              </li>
+            </ul>
+            <div class="services__btn-box">
+              <button class="services__btn">Записаться</button><strong class="services__price">от 500<sup>₽ </sup></strong>
             </div>
           </div>
-          <div class="hero__slider-pagination"></div>
-        </div>
-        <div class="hero__slider-box">
-          <button class="hero__slider-btn hero__slider-btn-prev">
-            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path>
-            </svg>
-          </button>
-          <button class="hero__slider-btn hero__slider-btn-next">
-            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path>
-            </svg>
-          </button>
-        </div>
-        <div class="hero__content">
-          <div class="hero__box-link"><a class="hero__link-more" href="#">Подробнее</a><a class="hero__link-service" href="#">Все услуги</a></div>
-          <ul class="hero__content-list swiper">
-            <div class="swiper-wrapper">
-              <li class="hero__content-item swiper-slide">
-                <h3 class="hero__content-title">Клиентов</h3>
-                <strong class="hero__content-desc">1000+</strong>
-              </li>
-              <li class="hero__content-item swiper-slide">
-                <h3 class="hero__content-title">Мы на рынке</h3>
-                <strong class="hero__content-desc">12 лет</strong>
-              </li>
-              <li class="hero__content-item swiper-slide">
-                <h3 class="hero__content-title">Партнеров</h3>
-                <strong class="hero__content-desc">200+</strong>
-              </li>
-              <li class="hero__content-item swiper-slide">
-                <h3 class="hero__content-title">Рейтинг</h3>
-                <strong class="hero__content-desc">5.0</strong>
-              </li>
-            </div>
-          </ul>
-          <button class="hero__link-application popup-open">
-            <strong>Оставить заявку</strong><span></span><span></span><span></span><span></span
-            ><span>
-              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
-            ></span>
-          </button>
         </div>
       </section>
-      <section class="main-services container us-shadow">
-        <h2 class="main-services__title us-title">Наши услуги</h2>
-        <ul class="main-services__list">
-          <li class="main-services__item">
-            <div>
-              <div class="main-services__item-icon" style="background-image: url('img/main-services/1.svg')"></div>
-              <strong class="main-services__item-subtitle">Услуга</strong>
-              <h3 class="main-services__item-title">Сезонная замена шин</h3>
-            </div>
-            <a class="main-services__item-link" href="#" aria-label="Подробнее">
-              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
-            ></a>
+      <section class="detailed-service prices container us-shadow">
+        <div class="prices__title-box">
+          <h2 class="prices__title us-title">Цены на услуги</h2>
+          <strong class="prices__subtitle">гарантия качества</strong>
+        </div>
+        <ul class="prices__list">
+          <li class="prices__header">
+            <h3 data-title>Наименование услуги</h3>
+            <div data-content><strong>Цена, ₽</strong><strong>Время, мин</strong></div>
           </li>
-          <li class="main-services__item">
-            <div>
-              <div class="main-services__item-icon" style="background-image: url('img/main-services/2.svg')"></div>
-              <strong class="main-services__item-subtitle">Услуга</strong>
-              <h3 class="main-services__item-title">Правка и ремонт дисков</h3>
+          <li class="prices__item">
+            <h3 data-title="1">
+              <span>Замена резины на дисках R12</span
+              ><span
+                ><i>
+                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg></i
+              ></span>
+            </h3>
+            <div data-content="1">
+              <strong><span>Цена, ₽</span><span>от 1 000</span></strong
+              ><strong><span>Время, мин</span><span>от 20</span></strong>
             </div>
-            <a class="main-services__item-link" href="#" aria-label="Подробнее">
-              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
-            ></a>
           </li>
-          <li class="main-services__item">
-            <div>
-              <div class="main-services__item-icon" style="background-image: url('img/main-services/3.svg')"></div>
-              <strong class="main-services__item-subtitle">Услуга</strong>
-              <h3 class="main-services__item-title">Сварка аргоном</h3>
+          <li class="prices__item">
+            <h3 data-title="2">
+              <span>Замена резины на дисках R15</span
+              ><span
+                ><i>
+                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg></i
+              ></span>
+            </h3>
+            <div data-content="2">
+              <strong><span>Цена, ₽</span><span>1 300</span></strong
+              ><strong><span>Время, мин</span><span>от 20</span></strong>
             </div>
-            <a class="main-services__item-link" href="#" aria-label="Подробнее">
-              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
-            ></a>
           </li>
-          <li class="main-services__item">
-            <div>
-              <div class="main-services__item-icon" style="background-image: url('img/main-services/4.svg')"></div>
-              <strong class="main-services__item-subtitle">Услуга</strong>
-              <h3 class="main-services__item-title">Продажа б/у резины из Европы</h3>
+          <li class="prices__item">
+            <h3 data-title="3">
+              <span>Замена резины на дисках R16, замена резины R16</span
+              ><span
+                ><i>
+                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg></i
+              ></span>
+            </h3>
+            <div data-content="3">
+              <strong><span>Цена, ₽</span><span>1 600</span></strong
+              ><strong><span>Время, мин</span><span>от 20</span></strong>
             </div>
-            <a class="main-services__item-link" href="#" aria-label="Подробнее">
-              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
-            ></a>
           </li>
-          <li class="main-services__item">
-            <div>
-              <div class="main-services__item-icon" style="background-image: url('img/main-services/5.svg')"></div>
-              <strong class="main-services__item-subtitle">Экспресс-услуга</strong>
-              <h3 class="main-services__item-title">Замена антифриза с промывкой</h3>
+          <li class="prices__item">
+            <h3 data-title="4">
+              <span>Замена резины на дисках R17</span
+              ><span
+                ><i>
+                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg></i
+              ></span>
+            </h3>
+            <div data-content="4">
+              <strong><span>Цена, ₽</span><span>1 700</span></strong
+              ><strong><span>Время, мин</span><span>от 20</span></strong>
             </div>
-            <a class="main-services__item-link" href="#" aria-label="Подробнее">
-              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
-            ></a>
           </li>
-          <li class="main-services__item">
-            <div>
-              <div class="main-services__item-icon" style="background-image: url('img/main-services/6.svg')"></div>
-              <strong class="main-services__item-subtitle">Услуга</strong>
-              <h3 class="main-services__item-title">Заправка кондиционера</h3>
+          <li class="prices__item">
+            <h3 data-title="5">
+              <span>Замена резины на дисках R18</span
+              ><span
+                ><i>
+                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg></i
+              ></span>
+            </h3>
+            <div data-content="5">
+              <strong><span>Цена, ₽</span><span>2 300</span></strong
+              ><strong><span>Время, мин</span><span>от 20</span></strong>
             </div>
-            <a class="main-services__item-link" href="#" aria-label="Подробнее">
-              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
-            ></a>
           </li>
-          <li class="main-services__item">
-            <div>
-              <div class="main-services__item-icon" style="background-image: url('img/main-services/7.svg')"></div>
-              <strong class="main-services__item-subtitle">Услуга</strong>
-              <h3 class="main-services__item-title">Ремонт порезов и проколов резины</h3>
+          <li class="prices__item">
+            <h3 data-title="6">
+              <span>Замена резины на дисках R19, замена резины на дисках R19</span
+              ><span
+                ><i>
+                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg></i
+              ></span>
+            </h3>
+            <div data-content="6">
+              <strong><span>Цена, ₽</span><span>3 100</span></strong
+              ><strong><span>Время, мин</span><span>от 20</span></strong>
             </div>
-            <a class="main-services__item-link" href="#" aria-label="Подробнее">
-              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
-            ></a>
+          </li>
+          <li class="prices__item">
+            <h3 data-title="7">
+              <span>Замена резины на дисках R20</span
+              ><span
+                ><i>
+                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg></i
+              ></span>
+            </h3>
+            <div data-content="7">
+              <strong><span>Цена, ₽</span><span>3 500</span></strong
+              ><strong><span>Время, мин</span><span>от 20</span></strong>
+            </div>
+          </li>
+          <li class="prices__item">
+            <h3 data-title="8">
+              <span>Замена резины на дисках R21</span
+              ><span
+                ><i>
+                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg></i
+              ></span>
+            </h3>
+            <div data-content="8">
+              <strong><span>Цена, ₽</span><span>Бесплатно</span></strong
+              ><strong><span>Время, мин</span><span>от 120</span></strong>
+            </div>
           </li>
         </ul>
       </section>
-      <section class="partners container">
-        <h2 class="partners__title us-title">Наши партнеры</h2>
-        <div class="partners__slider swiper">
-          <div class="swiper-wrapper">
-            <div class="partners__slide swiper-slide">
-              <div class="partners__slide-box">
-                <img class="partners__slide-img--bmw partners__slide-img" src="img/partners/bmw.svg" alt="Партнёр-bmw" />
-              </div>
-              <div class="partners__slide-box">
-                <img class="partners__slide-img--audi partners__slide-img" src="img/partners/audi.svg" alt="Партнёр-audi" />
-              </div>
-            </div>
-            <div class="partners__slide swiper-slide">
-              <div class="partners__slide-box">
-                <img class="partners__slide-img--hyundai partners__slide-img" src="img/partners/hyundai.svg" alt="Партнёр-hyundai" />
-              </div>
-              <div class="partners__slide-box">
-                <img class="partners__slide-img--kia partners__slide-img" src="img/partners/kia.svg" alt="Партнёр-kia" />
-              </div>
-            </div>
-            <div class="partners__slide swiper-slide">
-              <div class="partners__slide-box">
-                <img class="partners__slide-img--mitsubishi partners__slide-img" src="img/partners/mitsubishi.svg" alt="Партнёр-mitsubishi" />
-              </div>
-              <div class="partners__slide-box">
-                <img class="partners__slide-img--subaru partners__slide-img" src="img/partners/subaru.svg" alt="Партнёр-subaru" />
-              </div>
-            </div>
-            <div class="partners__slide swiper-slide">
-              <div class="partners__slide-box">
-                <img class="partners__slide-img--volkswagen partners__slide-img" src="img/partners/volkswagen.svg" alt="Партнёр-volkswagen" />
-              </div>
-              <div class="partners__slide-box">
-                <img class="partners__slide-img--honda partners__slide-img" src="img/partners/honda.svg" alt="Партнёр-honda" />
-              </div>
-            </div>
+      <section class="sign-up container us-shadow">
+        <h2 class="sign-up__title us-title">Запишитесь к мастеру</h2>
+        <form class="sign-up__form">
+          <ul class="sign-up__form-box">
+            <li class="sign-up__item">
+              <label class="sign-up__label" for="select"
+                ><span>Выберите услугу</span>
+                <select class="sign-up__select" id="select" name="service">
+                  <option value="Сезонная замена шин">Сезонная замена шин</option>
+                  <option value="Правка и ремонт дисков">Правка и ремонт дисков</option>
+                </select>
+              </label>
+            </li>
+            <li class="sign-up__item">
+              <label class="sign-up__label" for="datepicker"
+                ><span>Выберите дату</span>
+                <input class="sign-up__input" id="datepicker" type="text" name="date" placeholder="26.01.2023" />
+              </label>
+            </li>
+            <li class="sign-up__item">
+              <label class="sign-up__label" for="name"
+                ><span>Ваше имя</span>
+                <input class="sign-up__input" id="name" type="text" name="name" placeholder="Александр" />
+              </label>
+            </li>
+            <li class="sign-up__item">
+              <label class="sign-up__label" for="tel"
+                ><span>Номер телефона</span>
+                <input class="sign-up__input" id="tel" type="tel" name="tel" placeholder="+7" />
+              </label>
+            </li>
+          </ul>
+          <div class="sign-up__btn-box">
+            <button class="sign-up__btn">Записаться</button>
+            <label class="sign-up__checkbox-label" for="checkbox">
+              <input class="sign-up__checkbox" id="checkbox" type="checkbox" checked /><span class="sign-up__checkbox-icon"> </span
+              ><span class="sign-up__checkbox-desc">Отправляя форму, я даю согласие на обработку персональных данных</span>
+            </label>
           </div>
-        </div>
-        <div class="partners__slider-pagination"></div>
+        </form>
       </section>
-      <section class="mobile-service us-shadow">
-        <div class="mobile-service__container container">
-          <h2 class="mobile-service__title">Мобильные приложения</h2>
-          <h3 class="mobile-service__subtitle us-title">Наши услуги теперь у вас в кармане</h3>
-          <div class="mobile-service__content">
-            <div class="mobile-service__content-box">
-              <h4 class="mobile-service__content-title us-title"><span>pips</span><span>time</span></h4>
-              <p class="mobile-service__content-desc">
-                Разнообразный и богатый опыт новая модель организационной деятельности в значительной степени обуславливает создание модели развития.
-                Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий играет важную роль в формировании направлений
-                прогрессивного развития.
-              </p>
-              <div class="mobile-service__link-box">
-                <a class="mobile-service__link-googleplay mobile-service__link" href="#"
-                  ><img src="img/mobile-service/googleplay.svg" alt="googleplay" /></a
-                ><a class="mobile-service__link-appstore mobile-service__link" href="#"
-                  ><img src="img/mobile-service/appstore.svg" alt="appstore"
-                /></a>
-              </div>
-            </div>
-            <picture class="mobile-service__img-box">
-              <source class="mobile-service__img" srcset="img/mobile-service/mobile.webp" />
-              <img class="mobile-service__img" src="img/mobile-service/mobile.webp" alt="Изображение" />
-            </picture>
-          </div>
-        </div>
-      </section>
-      <section class="main-about container">
-        <h2 class="main-about__title us-title">О сервисе</h2>
-        <p class="main-about__desc">
-          В последние десять лет в нашей стране наблюдается стремительный рост автопарка отечественного и зарубежного производителя. Это, в свою
-          очередь, является главным условием развития деятельности различных направлений автосервиса. В перечень наиболее популярных и востребованных
-          услуг по ремонту автомобилей относится шиномонтаж.
-        </p>
-      </section>
-      <section class="contacts container us-shadow">
+      <section class="contacts-services contacts container us-shadow">
         <div class="contacts__map" id="map"></div>
         <div class="contacts__content">
           <h2 class="contacts__title us-title">Наши контакты</h2>
@@ -434,44 +375,54 @@
           </ul>
         </div>
       </section>
-      <section class="main-desc container us-shadow">
-        <svg>
-          <use xlink:href="img/sprite.svg#tread"></use>
-        </svg>
-        <div class="main-desc__content">
-          <h2 class="main-desc__title us-title">Длинный или короткий заголовок для сео текста</h2>
-          <div class="main-desc__desc-box">
-            <p class="main-desc__desc">
-              Задача организации, в особенности же рамки и место обучения кадров требуют от нас анализа модели развития. Равным образом рамки и место
-              обучения кадров представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Не
-              следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и
-              реализации направлений прогрессивного развития.
-            </p>
-            <p class="main-desc__desc">
-              Повседневная практика показывает, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и
-              модернизации позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт консультация с широким активом
-              представляет собой интересный эксперимент проверки систем массового участия.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="record container us-shadow">
-        <form class="record__form">
-          <h2 class="record__title us-title">Запишитесь к мастеру</h2>
-          <label class="record__label" for="name"
-            ><span>Ваше имя</span>
-            <input class="record__input" type="text" id="name" name="name" placeholder="Александр" />
-          </label>
-          <label class="record__label" for="tel"
-            ><span>Телефон</span>
-            <input class="record__input" type="tel" id="tel" name="tel" placeholder="+7" />
-          </label>
-          <button class="record__btn">Записаться</button>
-        </form>
-        <picture class="record__img-box">
-          <source class="record__img" srcset="img/record/1.webp" />
-          <img class="record__img" src="img/record/1.webp" alt="Тесла" />
-        </picture>
+      <section class="popular-services main-services container us-shadow">
+        <h2 class="main-services__title us-title">Популярные услуги</h2>
+        <ul class="main-services__list">
+          <li class="main-services__item">
+            <div>
+              <div class="main-services__item-icon" style="background-image: url('img/main-services/1.svg')"></div>
+              <strong class="main-services__item-subtitle">Услуга</strong>
+              <h3 class="main-services__item-title">Сезонная замена шин</h3>
+            </div>
+            <a class="main-services__item-link" href="#" aria-label="Подробнее">
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></a>
+          </li>
+          <li class="main-services__item">
+            <div>
+              <div class="main-services__item-icon" style="background-image: url('img/main-services/2.svg')"></div>
+              <strong class="main-services__item-subtitle">Услуга</strong>
+              <h3 class="main-services__item-title">Правка и ремонт дисков</h3>
+            </div>
+            <a class="main-services__item-link" href="#" aria-label="Подробнее">
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></a>
+          </li>
+          <li class="main-services__item">
+            <div>
+              <div class="main-services__item-icon" style="background-image: url('img/main-services/3.svg')"></div>
+              <strong class="main-services__item-subtitle">Услуга</strong>
+              <h3 class="main-services__item-title">Сварка аргоном</h3>
+            </div>
+            <a class="main-services__item-link" href="#" aria-label="Подробнее">
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></a>
+          </li>
+          <li class="main-services__item">
+            <div>
+              <div class="main-services__item-icon" style="background-image: url('img/main-services/4.svg')"></div>
+              <strong class="main-services__item-subtitle">Услуга</strong>
+              <h3 class="main-services__item-title">Продажа б/у резины из Европы</h3>
+            </div>
+            <a class="main-services__item-link" href="#" aria-label="Подробнее">
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L6 2L1 7" stroke="white" stroke-width="2" stroke-linecap="round"></path></svg
+            ></a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
@@ -577,7 +528,8 @@
       </div>
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&amp;lang=ru_RU" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="js/services.js"></script>
   </body>
 </html>
