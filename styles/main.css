@@ -960,7 +960,7 @@ input[type='search']::-webkit-search-results-decoration {
 .hero::after {
   position: absolute;
   content: '';
-  z-index: -1;
+  z-index: 1;
   top: 16.5rem;
   right: -9rem;
   width: 17.8rem;
@@ -1076,6 +1076,7 @@ input[type='search']::-webkit-search-results-decoration {
 }
 .hero__slide {
   min-height: 65rem;
+  background-color: var(--black);
 }
 .hero__slide-price,
 .hero__slide-desc {
@@ -1726,6 +1727,7 @@ input[type='search']::-webkit-search-results-decoration {
   border-left: 0.12rem solid #333639;
 }
 .partners__slide-box {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1739,6 +1741,24 @@ input[type='search']::-webkit-search-results-decoration {
 }
 .partners__slide-box:first-child {
   border-bottom: 0.12rem solid #333639;
+}
+.partners__slide-box:hover .partners__slide-img path,
+.partners__slide-box:hover .partners__slide-img rect,
+.partners__slide-box:active .partners__slide-img path,
+.partners__slide-box:active .partners__slide-img rect {
+  fill: #ff8a1e;
+}
+.partners__slide-img path,
+.partners__slide-img rect {
+  -webkit-transition-property: fill;
+  -o-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 .partners__slide-img--bmw {
   width: 9.6rem;
